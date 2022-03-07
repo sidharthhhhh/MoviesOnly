@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 15, 2021 at 08:23 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- Generation Time: Mar 07, 2022 at 10:18 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -82,14 +83,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
-(1, 0, 'admin', 'password', 0),
-(2, 3, 'theatre', 'password', 1),
-(3, 4, 'theatre2', 'password', 1),
-(12, 2, 'harryden@gmail.com', 'password', 2),
-(15, 14, 'USR295127', 'PWD195747', 1),
-(17, 4, 'bruno@gmail.com', 'password', 2),
-(18, 6, 'THR760801', 'PWD649976', 1),
-(19, 5, 'james@gmail.com', 'password', 2);
+(0, 0, 'admin', 'password', 2),
+(1, 1, 'THR760801', 'PWD649976', 2);
 
 -- --------------------------------------------------------
 
@@ -114,10 +109,10 @@ CREATE TABLE `tbl_movie` (
 --
 
 INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `release_date`, `image`, `video_url`, `status`) VALUES
-(1, 3, 'The Invisible Man', 'Elisabeth Moss, Oliver Jackson-Cohen, Aldis Hodge, Storm Reid', 'Cecilia\'s abusive ex-boyfriend fakes his death and becomes invisible to stalk and torment her. She begins experiencing strange events and decides to hunt down the truth on her own.', '2020-03-04', 'images/tim.jpg', 'https://www.youtube.com/watch?v=WO_FJdiY9dA', 0),
-(11, 6, 'Cherry', 'Tom Holland, Ciara Bravo, Harry Holland, Kelli Berglund', 'Cherry (Tom Holland) drifts from college dropout to army medic in Iraq-anchored only by his one true love, Emily (Ciara Bravo). But after returning from the war with PTSD, his life spirals into drugs.', '2021-03-01', 'images/cherry.jpg', 'https://www.youtube.com/watch?v=H5bH6O0bErk', 0),
-(12, 6, 'Godzilla vs. Kong', 'Millie Bobby Brown, Alexander Skarsgard, Rebecca Hall', 'The initial confrontation between the two titans -- instigated by unseen forces -- is only the beginning of the mystery that lies deep within the core of the planet.', '2021-03-31', 'images/gvkpster.jpg', 'https://www.youtube.com/watch?v=odM92ap8_c0', 0),
-(13, 6, 'Outside the Wire', 'Anthony Mackie, Damson Idris, Emily Beecham', 'In the near future, a drone pilot sent into a war zone finds himself paired up with a top-secret android officer on a mission to stop a nuclear attack.', '2021-01-28', 'images/otw.jpg', 'https://www.youtube.com/watch?v=u8ZsUivELbs', 0),
+(1, 3, '3 Idiots', '	\nAamir Khan\nR. Madhavan\nSharman Joshi\nOmi Vaidya\nKareena Kapoor\nBoman Irani', 'Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them \"idiots\".\n', '2020-03-25', 'images/3ii.jpeg', 'https://youtu.be/xvszmNXdM4w', 0),
+(11, 6, 'Golmaal Again', '	\nAjay Devgan\nParineeti Chopra\nTabu\nArshad Warsi\nTushar Kapoor\nShreyas Talpade\nKunal Khemu\nJohny Lever\nSanjay Mishra\nPrakash Raj\nNeil Nitin Mukesh', 'Gopal, Madhav, Lucky, Laxman and Laxman 2 are orphans in an orphanage in Ooty managed by businessman Jamnadas. Gopal is afraid of ghosts, Lucky is mute and Laxman has a speech impediment. The boys find a baby girl and take her in, naming her Khushi. They care for her and are also aware of librarian Anna\'s ability to see ghosts and spirits. ', '2017-03-01', 'images/golmaal.jpg', 'https://youtu.be/VgQUwsUHdqc', 0),
+(12, 6, 'Gangubai Kathiawadi', '	\nAlia Bhatt\nShantanu Maheshwari\nVijay Raaz\nIndira Tiwari\nSeema Pahwa', 'The film is loosely based on the true story of Gangubai Harjivandas, popularly known as Gangubai Kothewali, whose life was documented in the book Mafia Queens of Mumbai written by S. Hussain Zaidi. The film depicts the rise of a simple girl from Kathiawad who had no choice but to embrace the ways of destiny and swing it in her favour.\n\n', '2022-03-31', 'images/gangu.jpg', 'https://www.youtube.com/watch?v=odM92ap8_c0', 0),
+(13, 6, 'Dangal', 'Aamir Khan\nSakshi Tanwar\nFatima Sana Shaikh\nZaira Wasim\nSanya Malhotra\nSuhani Bhatnagar\nAparshakti Khurana\nGirish Kulkarni', 'Dangal (\'Wrestling\') revolves around the extraordinary life of Mahavir Singh, an ex-wrestler who is forced to give up his dreams of winning gold for India in international wrestling due to lack of financial support. He resolves to train his future son to one-day represent India in his passion sport.\n', '2021-01-28', 'images/Dangal.jpg', 'https://youtu.be/x_7YlGv9u1g', 0),
 (17, 6, 'Justice League', 'Ben Affleck, Henry Cavil, Ezra Miller', 'This is a demo description for the movie ZSJL.', '2021-03-22', 'images/zsjl.jpg', 'https://www.youtube.com/watch?v=vM-Bja2Gy04', 0);
 
 -- --------------------------------------------------------
@@ -142,7 +137,8 @@ CREATE TABLE `tbl_news` (
 INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
 (3, 'Black Widow', 'Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz', '2021-07-09', 'At birth the Black Widow (aka Natasha Romanova) is given to the KGB, which grooms her to become its ultimate operative.', 'news_images/blackwidow.jpg'),
 (9, 'Shang-Chi and the Legend of the Ten Rings', 'Simu Liu, Awkwafina, Tony Leung, Fala Chen, Micheele Yeoh', '2021-09-14', 'Shang-Chi is a master of numerous unarmed and weaponry-based wushu styles, including the use of the gun, nunchaku, and jian.', 'news_images/shangchi.jpg'),
-(10, 'The Eternals', 'Richard Madden, Salma Hayek, Angelina Jolie, Kit Harrington', '2021-11-04', 'The saga of the eternals, a race of immortal beings who lived on earth and shaped its history and civilizations.', 'news_images/eternals.jpg');
+(10, 'The Eternals', 'Richard Madden, Salma Hayek, Angelina Jolie, Kit Harrington', '2021-11-04', 'The saga of the eternals, a race of immortal beings who lived on earth and shaped its history and civilizations.', 'news_images/eternals.jpg'),
+(11, 'Radhe Shyam', 'Prabhas, Pooja Hegde', '2022-03-11', 'Radhe Shyam is an upcoming Indian period romantic drama film written and directed by Radha Krishna Kumar, starring Prabhas and Pooja Hegde. It is shot simultaneously in Telugu and Hindi languages.[3][', 'news_images/Radhe.jpg');
 
 -- --------------------------------------------------------
 
@@ -164,9 +160,10 @@ CREATE TABLE `tbl_registration` (
 --
 
 INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gender`) VALUES
-(2, 'Harry Den', 'harryden@gmail.com', '1247778540', 22, 'gender'),
+(0, 'admin', 'harryden@gmail.com', '1247778540', 22, 'gender'),
 (4, 'Bruno', 'bruno@gmail.com', '7451112450', 30, 'gender'),
-(5, 'James', 'james@gmail.com', '7124445696', 25, 'gender');
+(5, 'James', 'james@gmail.com', '7124445696', 25, 'gender'),
+(6, 'Sidharth', 'sidharthsangeveni@gmail.com', '7878467689', 20, 'gender');
 
 -- --------------------------------------------------------
 
@@ -279,7 +276,7 @@ CREATE TABLE `tbl_theatre` (
 --
 
 INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `state`, `pin`) VALUES
-(3, 'AMC Theatre', '11500 Ash St', 'Leawd', 'DM', 691523),
+(1, 'AMC Theatre', '11500 Ash St', 'Leawd', 'DM', 691523),
 (4, 'Cinemark', '3900 Dallas Parkway Suite 500 Plano', '12 Street, Ep', 'UD', 691523),
 (5, 'Midtown Cinemas', 'Aue', 'Charles Street, EUS', 'DMM', 691523),
 (6, 'Riverview Theater', '3800 42nd Ave S', 'Minneapolis, MN 55406', 'Minnesot', 224450);
@@ -356,52 +353,63 @@ ALTER TABLE `tbl_theatre`
 -- AUTO_INCREMENT for table `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
 -- AUTO_INCREMENT for table `tbl_contact`
 --
 ALTER TABLE `tbl_contact`
   MODIFY `contact_id` int(11) NOT NULL AUTO_INCREMENT;
+
 --
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
 --
 -- AUTO_INCREMENT for table `tbl_movie`
 --
 ALTER TABLE `tbl_movie`
   MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
 --
 -- AUTO_INCREMENT for table `tbl_registration`
 --
 ALTER TABLE `tbl_registration`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `tbl_screens`
 --
 ALTER TABLE `tbl_screens`
   MODIFY `screen_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
 --
 -- AUTO_INCREMENT for table `tbl_shows`
 --
 ALTER TABLE `tbl_shows`
   MODIFY `s_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
 --
 -- AUTO_INCREMENT for table `tbl_show_time`
 --
 ALTER TABLE `tbl_show_time`
   MODIFY `st_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
 --
 -- AUTO_INCREMENT for table `tbl_theatre`
 --
 ALTER TABLE `tbl_theatre`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
