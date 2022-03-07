@@ -69,7 +69,10 @@ $theatre=mysqli_fetch_array($th);
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="cinema.png" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $theatre['name'];?></span>
+              <span class="hidden-xs"><?php 
+echo  $_SESSION['theatre'];
+              
+              echo $theatre['name'];?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->

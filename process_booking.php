@@ -49,7 +49,7 @@ if(!isset($_SESSION['user']))
 <?php include('footer.php');?>
 </div>
 <?php
-    $_SESSION_start();
+    session_start();
     extract($_POST);
     include('config.php');
     $_SESSION['screen']=$screen;
