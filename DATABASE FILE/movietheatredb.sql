@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2022 at 10:18 AM
+-- Generation Time: Mar 09, 2022 at 04:13 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -84,7 +84,8 @@ CREATE TABLE `tbl_login` (
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
 (0, 0, 'admin', 'password', 2),
-(1, 1, 'THR760801', 'PWD649976', 2);
+(1, 1, 'THR760801', 'PWD649976', 2),
+(22, 7, 'sidharthsangeveni@gmail.com', 'ssssssss', 2);
 
 -- --------------------------------------------------------
 
@@ -113,7 +114,7 @@ INSERT INTO `tbl_movie` (`movie_id`, `t_id`, `movie_name`, `cast`, `desc`, `rele
 (11, 6, 'Golmaal Again', '	\nAjay Devgan\nParineeti Chopra\nTabu\nArshad Warsi\nTushar Kapoor\nShreyas Talpade\nKunal Khemu\nJohny Lever\nSanjay Mishra\nPrakash Raj\nNeil Nitin Mukesh', 'Gopal, Madhav, Lucky, Laxman and Laxman 2 are orphans in an orphanage in Ooty managed by businessman Jamnadas. Gopal is afraid of ghosts, Lucky is mute and Laxman has a speech impediment. The boys find a baby girl and take her in, naming her Khushi. They care for her and are also aware of librarian Anna\'s ability to see ghosts and spirits. ', '2017-03-01', 'images/golmaal.jpg', 'https://youtu.be/VgQUwsUHdqc', 0),
 (12, 6, 'Gangubai Kathiawadi', '	\nAlia Bhatt\nShantanu Maheshwari\nVijay Raaz\nIndira Tiwari\nSeema Pahwa', 'The film is loosely based on the true story of Gangubai Harjivandas, popularly known as Gangubai Kothewali, whose life was documented in the book Mafia Queens of Mumbai written by S. Hussain Zaidi. The film depicts the rise of a simple girl from Kathiawad who had no choice but to embrace the ways of destiny and swing it in her favour.\n\n', '2022-03-31', 'images/gangu.jpg', 'https://www.youtube.com/watch?v=odM92ap8_c0', 0),
 (13, 6, 'Dangal', 'Aamir Khan\nSakshi Tanwar\nFatima Sana Shaikh\nZaira Wasim\nSanya Malhotra\nSuhani Bhatnagar\nAparshakti Khurana\nGirish Kulkarni', 'Dangal (\'Wrestling\') revolves around the extraordinary life of Mahavir Singh, an ex-wrestler who is forced to give up his dreams of winning gold for India in international wrestling due to lack of financial support. He resolves to train his future son to one-day represent India in his passion sport.\n', '2021-01-28', 'images/Dangal.jpg', 'https://youtu.be/x_7YlGv9u1g', 0),
-(17, 6, 'Justice League', 'Ben Affleck, Henry Cavil, Ezra Miller', 'This is a demo description for the movie ZSJL.', '2021-03-22', 'images/zsjl.jpg', 'https://www.youtube.com/watch?v=vM-Bja2Gy04', 0);
+(17, 6, 'Gehraiyaan', '	\nDeepika Padukone\nSiddhant Chaturvedi\nAnanya Panday\nDhairya Karwa', 'Takes you on a journey into the deep rooted intricacies of modern human relationships.\n', '2021-03-22', 'images/gehra.jpg', 'https://www.youtube.com/watch?v=vM-Bja2Gy04', 0);
 
 -- --------------------------------------------------------
 
@@ -138,7 +139,8 @@ INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `
 (3, 'Black Widow', 'Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz', '2021-07-09', 'At birth the Black Widow (aka Natasha Romanova) is given to the KGB, which grooms her to become its ultimate operative.', 'news_images/blackwidow.jpg'),
 (9, 'Shang-Chi and the Legend of the Ten Rings', 'Simu Liu, Awkwafina, Tony Leung, Fala Chen, Micheele Yeoh', '2021-09-14', 'Shang-Chi is a master of numerous unarmed and weaponry-based wushu styles, including the use of the gun, nunchaku, and jian.', 'news_images/shangchi.jpg'),
 (10, 'The Eternals', 'Richard Madden, Salma Hayek, Angelina Jolie, Kit Harrington', '2021-11-04', 'The saga of the eternals, a race of immortal beings who lived on earth and shaped its history and civilizations.', 'news_images/eternals.jpg'),
-(11, 'Radhe Shyam', 'Prabhas, Pooja Hegde', '2022-03-11', 'Radhe Shyam is an upcoming Indian period romantic drama film written and directed by Radha Krishna Kumar, starring Prabhas and Pooja Hegde. It is shot simultaneously in Telugu and Hindi languages.[3][', 'news_images/Radhe.jpg');
+(11, 'Radhe Shyam', 'Prabhas, Pooja Hegde', '2022-03-11', 'Radhe Shyam is an upcoming Indian period romantic drama film written and directed by Radha Krishna Kumar, starring Prabhas and Pooja Hegde. It is shot simultaneously in Telugu and Hindi languages.[3][', 'news_images/Radhe.jpg'),
+(12, 'dsgzgh', 'dfhdhdh', '2022-03-31', 'dfhdfhd', 'news_images/3i.jpg');
 
 -- --------------------------------------------------------
 
@@ -353,7 +355,7 @@ ALTER TABLE `tbl_theatre`
 -- AUTO_INCREMENT for table `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tbl_contact`
@@ -365,25 +367,25 @@ ALTER TABLE `tbl_contact`
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tbl_movie`
 --
 ALTER TABLE `tbl_movie`
-  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `tbl_news`
 --
 ALTER TABLE `tbl_news`
-  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `news_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tbl_registration`
 --
 ALTER TABLE `tbl_registration`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbl_screens`
