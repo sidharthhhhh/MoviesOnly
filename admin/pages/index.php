@@ -20,7 +20,7 @@ include('header.php');
     <section class="content">
 
       <!-- Default box --> 
-      <div class="box">
+      <div class="circle">
         <div class="box-body">
             <div class="box box-primary">
             <!-- /.box-header -->
