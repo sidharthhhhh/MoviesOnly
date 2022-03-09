@@ -5,7 +5,7 @@
       <b>Version</b> 2.3.8
     </div>
     
-    <strong> &copy; <?php echo date("Y"); ?> <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    <strong> &copy; <?php echo date("Y"); ?> <a href="">Sidharth</a>.</strong> All rights
     reserved.
   </footer>
 

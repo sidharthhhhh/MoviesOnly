@@ -10,7 +10,7 @@ include('header.php');
 				<div class="listview_1_of_3 images_1_of_3">
 					<h2 style="color:#555;">Upcoming Movies</h2>
 					<?php 
-					$qry3=mysqli_query($con,"SELECT * FROM tbl_news LIMIT 5");
+					$qry3=mysqli_query($con,"SELECT * FROM tbl_news LIMIT 10");
 					
 					while($n=mysqli_fetch_array($qry3))
 					{
@@ -42,7 +42,7 @@ include('header.php');
 					<h2 style="color:#555;">Movie Trailers</h2>
 						<div class="middle-list">
 					<?php 
-					$qry4=mysqli_query($con,"SELECT * FROM tbl_movie ORDER BY rand() LIMIT 6");
+					$qry4=mysqli_query($con,"SELECT * FROM tbl_movie ORDER BY rand() LIMIT 10");
 				
 					while($nm=mysqli_fetch_array($qry4))
 					{
