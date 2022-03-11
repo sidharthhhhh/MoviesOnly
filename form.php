@@ -70,7 +70,7 @@ class formBuilder
         {
             $label=$rules["label"];
            $this->validators=$this->validators."notEmpty: {
-                        message: 'The $label is required and can\'t be empty'
+                        message: 'The $label is required and cant be empty'
                     }," ;
         }
         if (array_key_exists("min",$rules) && array_key_exists("max",$rules)) // if rules array have value min and max

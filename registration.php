@@ -27,12 +27,12 @@
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <select name="gender" class="form-control">
+        <select name="Gender" class="form-control">
             <option value>Select Gender</option>
             <option>Male</option>
             <option>Female</option>
         </select>
-        <?php $frm->validate("gender",array("required","label"=>"Gender")); // Validating form using form builder written in form.php ?>
+        <?php $frm->validate("Gender",array("required","label"=>"Gender")); // Validating form using form builder written in form.php ?>
         <span class="glyphicon glyphicon-user form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
