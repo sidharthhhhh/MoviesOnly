@@ -145,5 +145,6 @@ if(!isset($_SESSION['user']))
 		amount=charge*$(this).val();
 		$('#amount').html("Rs "+amount);
 		$('#hm').val(amount);
+		window.print(seats)
 	});
 </script>

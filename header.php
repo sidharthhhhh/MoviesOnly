@@ -77,5 +77,5 @@ function myFunction() {
     else{
         return true;
     }
-    </script>
 }
+</script>
