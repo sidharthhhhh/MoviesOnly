@@ -169,7 +169,7 @@ a {
 } /* vertical align top */
 .underline {
   padding-bottom: 5px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid rgb(151, 34, 34);
   margin: 0 0 20px 0;
 } /* Add 5px bottom padding and a underline */
 nav.vertical ul li {
@@ -194,7 +194,7 @@ body {
   background: url(../images/hd-bg.png);
 }
 .header-top {
-  border-bottom: 2px ridge rgb(236, 235, 238);
+  border-bottom: 2px ridge rgb(45, 21, 93);
 }
 .wrap {
   width: 80%;
