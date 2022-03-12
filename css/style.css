@@ -188,13 +188,13 @@ img {
 }
 body {
   font-family: "AmbleRegular";
-  background: #fff;
+  background: rgb(114, 43, 43);
 }
 .header {
   background: url(../images/hd-bg.png);
 }
 .header-top {
-  border-bottom: 2px ridge #333;
+  border-bottom: 2px ridge rgb(236, 235, 238);
 }
 .wrap {
   width: 80%;
@@ -523,11 +523,11 @@ p.s-img a:hover {
   text-decoration: underline;
   font-size: 13px;
   line-height: 1.8em;
-  color: #1344b0;
+  color: #3d59c8;
 }
 /*--Footer--*/
 .footer {
-  background: #222;
+  background: rgb(3, 0, 8);
 }
 .footer-top {
   padding: 20px 0;
@@ -549,7 +549,7 @@ p.s-img a:hover {
 }
 .span_1_of_4 p {
   font-size: 0.8125em;
-  color: #666;
+  color: rgb(187, 137, 137);
   line-height: 1.8em;
 }
 p.txt_4 {
@@ -558,7 +558,7 @@ p.txt_4 {
   font-size: 2em;
 }
 .content-top h3 {
-  color: #fcac03;
+  color: #faf9f8;
   font-size: 2em;
   padding: 1.5%;
 }
