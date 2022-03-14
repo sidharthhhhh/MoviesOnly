@@ -32,7 +32,8 @@ date_default_timezone_set('Asia/Kolkata');
 			  		   <li><a href="movies_events.php">Movies</a></li>
 			  		   <li>
 						<?php 
-						 if(isset($_SESSION['user'] )){
+						 if(isset($_SESSION['user'] ))
+						 {
 					  		$us=mysqli_query($con,"SELECT * from tbl_registration where `user_id`='".$_SESSION['user']."'");
 							$user=mysqli_fetch_array($us);
 						?>

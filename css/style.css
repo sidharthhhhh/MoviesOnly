@@ -188,13 +188,13 @@ img {
 }
 body {
   font-family: "AmbleRegular";
-  background: rgb(114, 43, 43);
+  background: rgb(189, 32, 32);
 }
 .header {
   background: url(../images/hd-bg.png);
 }
 .header-top {
-  border-bottom: 2px ridge rgb(45, 21, 93);
+  border-bottom: 2px ridge rgb(228, 226, 231);
 }
 .wrap {
   width: 80%;
@@ -245,7 +245,7 @@ a:hover {
   margin-right: 20px;
 }
 #example-one a {
-  color: #aaa;
+  color: rgb(170, 35, 35);  
   font-size: 16px;
   float: left;
   padding: 6px 10px 4px 10px;
@@ -259,9 +259,9 @@ a:hover {
   position: absolute;
   bottom: -2px;
   left: 0;
-  width: 10px;
+  width: 8x;
   height: 2px;
-  background: #db9603;
+  background: #e2630e;
 }
 .ie6 #example-one li,
 .ie7 #example-one li {
@@ -294,7 +294,7 @@ a:hover {
   display: block;
   height: 20px;
   font-size: 13px;
-  color: #fac9a9;
+  color: #0fb82b;
   margin-bottom: 10px;
 }
 #reservation-form select {
@@ -317,7 +317,7 @@ a:hover {
   display: block;
   padding-bottom: 4px;
   font-size: 13px;
-  color: #aaa;
+  color: rgb(76, 63, 194);
 }
 /*--Content--*/
 .content {
@@ -339,25 +339,25 @@ a:hover {
   overflow: hidden;
 }
 .data {
-  color: #989898;
+  color: #da570b;
   margin-bottom: 1px;
 }
 .color {
-  color: #1344b0;
+  color: #e9eef8;
   text-decoration: underline;
   line-height: 1.8em;
   font-size: 13px;
 }
 a:hover {
   text-decoration: none;
-  color: #1344b0;
+  color: #ebf0fa;
 }
 .text-top {
   padding-top: 6px;
   display: inline-block;
   font-size: 13px;
   line-height: 1.8em;
-  color: #888;
+  color: rgb(75, 74, 77);
 }
 .listimg {
   display: block;
@@ -380,7 +380,7 @@ a:hover {
 .link {
   font-size: 12px;
   line-height: 20px;
-  color: #313131;
+  color: #454649;
   font-weight: bold;
   text-decoration: underline;
   line-height: 1.8em;
@@ -441,7 +441,7 @@ a:hover {
 }
 .list_1_of_2 p {
   font-size: 0.8125em;
-  color: #333;
+  color: rgb(30, 39, 163);
   line-height: 1.5em;
   font-family: verdana, arial, helvetica, helve, sans-serif;
   padding: 0;
@@ -512,7 +512,7 @@ p.s-img a:hover {
   color: #e3480b;
 }
 .color1 {
-  color: #989898;
+  color: #5732da;
   font-size: 13px;
 }
 .link-top {
@@ -523,7 +523,7 @@ p.s-img a:hover {
   text-decoration: underline;
   font-size: 13px;
   line-height: 1.8em;
-  color: #3d59c8;
+  color: #ebf0fa;
 }
 /*--Footer--*/
 .footer {
@@ -553,7 +553,7 @@ p.s-img a:hover {
   line-height: 1.8em;
 }
 p.txt_4 {
-  color: #666;
+  color: rgb(12, 29, 182);
   margin-top: 2%;
   font-size: 2em;
 }
@@ -601,7 +601,7 @@ p.txt_4 {
 }
 .footer-nav li a {
   font-size: 13px;
-  color: #666;
+  color: rgb(19, 32, 153);
   vertical-align: top;
   line-height: 21px;
 }
@@ -674,7 +674,7 @@ p.txt_4 {
 .span_3_of_2 p {
   font-size: 0.8125em;
   padding: 0.3em 0;
-  color: #888;
+  color: rgb(0, 4, 223);
   line-height: 1.8em;
 }
 .span_3_of_1 p {
@@ -773,7 +773,7 @@ p.txt_4 {
   padding: 12px 14px 9px 10px;
 }
 .span_3_of_2 h4 {
-  color: #888;
+  color: rgb(91, 19, 224);
   font-size: 1.5em;
   margin-bottom: 2%;
 }
@@ -795,7 +795,7 @@ p.txt_4 {
   margin-left: 3.3%;
 }
 a {
-  color: #888;
+  color: rgb(86, 21, 206);
   font-size: 13px;
   line-height: 1.5em;
 }
