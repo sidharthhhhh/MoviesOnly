@@ -40,7 +40,7 @@
       color: #fff;	  
       border-right: 30px solid transparent;
       border-bottom: 30px solid #3D3D3D;
-      border-bottom-color: #777\9;
+      border-bottom-color: #7779;
       opacity: .3;
       filter: alpha(opacity=30);	  
     }
@@ -195,10 +195,10 @@ html ul.flat_tabs li.active, html ul.flat_tabs li.active a:hover  {
 	background: #fff;
 	-moz-border-radius-bottomright: 5px;
 	-khtml-border-radius-bottomright: 5px;
-	-webkit-border-bottom-right-radius: 5px;
+	border-bottom-right-radius: 5px;
 	-moz-border-radius-bottomleft: 5px;
 	-khtml-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 .tsc_flat_tab_content {
 	padding: 20px;
@@ -435,7 +435,7 @@ html ul.flat_tabs li.active, html ul.flat_tabs li.active a:hover  {
 }
 .tsc_gradient-vtabs label:after {
     content: '';
-	background: #ff2f2ff;
+	background: #ff2fff;
 	position: absolute;
 	right: -2px;
 	top: 0;

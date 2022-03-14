@@ -93,7 +93,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
+  border: 10;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -188,10 +188,11 @@ img {
 }
 body {
   font-family: "AmbleRegular";
-  background: #fff;
+  background: #1344b0;
 }
 .header {
   background: url(../images/header1.jpg);
+
 }
 .header-top {
   border-bottom: 2px ridge #333;
@@ -374,7 +375,7 @@ a:hover {
 .link {
   font-size: 12px;
   line-height: 20px;
-  color: #313131;
+  color: #c00c0c;
   font-weight: bold;
   text-decoration: underline;
   line-height: 1.8em;
@@ -506,7 +507,7 @@ p.s-img a:hover {
   color: #e3480b;
 }
 .color1 {
-  color: #989898;
+  color: #524444;
   font-size: 13px;
 }
 .link-top {
