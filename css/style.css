@@ -169,7 +169,7 @@ a {
 } /* vertical align top */
 .underline {
   padding-bottom: 5px;
-  border-bottom: 1px solid rgb(151, 34, 34);
+  border-bottom: 1px solid rgb(221, 206, 206);
   margin: 0 0 20px 0;
 } /* Add 5px bottom padding and a underline */
 nav.vertical ul li {
@@ -191,7 +191,7 @@ body {
   background: rgb(189, 32, 32);
 }
 .header {
-  background: url(../images/hd-bg.png);
+  background: url("../images/header.jpg");
 }
 .header-top {
   border-bottom: 2px ridge rgb(228, 226, 231);
@@ -321,7 +321,7 @@ a:hover {
 }
 /*--Content--*/
 .content {
-  background: #fff;
+  background: rgb(238, 236, 236);
   padding: 20px 0;
 }
 /*  GRID OF THREE   ============================================================================= */
@@ -339,25 +339,25 @@ a:hover {
   overflow: hidden;
 }
 .data {
-  color: #da570b;
+  color: #dd5b10;
   margin-bottom: 1px;
 }
 .color {
-  color: #e9eef8;
+  color: #00050f;
   text-decoration: underline;
   line-height: 1.8em;
   font-size: 13px;
 }
 a:hover {
   text-decoration: none;
-  color: #ebf0fa;
+  color: #8d98ad;
 }
 .text-top {
   padding-top: 6px;
   display: inline-block;
   font-size: 13px;
   line-height: 1.8em;
-  color: rgb(75, 74, 77);
+  color: #797581;
 }
 .listimg {
   display: block;
@@ -380,14 +380,14 @@ a:hover {
 .link {
   font-size: 12px;
   line-height: 20px;
-  color: #454649;
+  color: #dd5b10;
   font-weight: bold;
   text-decoration: underline;
   line-height: 1.8em;
 }
 .link:hover {
   text-decoration: none;
-  color: #313131;
+  color: #db0707;
 }
 .link2 {
   font-size: 14px;
@@ -441,7 +441,7 @@ a:hover {
 }
 .list_1_of_2 p {
   font-size: 0.8125em;
-  color: rgb(30, 39, 163);
+  color: rgb(107, 108, 124);
   line-height: 1.5em;
   font-family: verdana, arial, helvetica, helve, sans-serif;
   padding: 0;
@@ -512,7 +512,7 @@ p.s-img a:hover {
   color: #e3480b;
 }
 .color1 {
-  color: #5732da;
+  color: #5b5769;
   font-size: 13px;
 }
 .link-top {
@@ -523,11 +523,11 @@ p.s-img a:hover {
   text-decoration: underline;
   font-size: 13px;
   line-height: 1.8em;
-  color: #ebf0fa;
+  color: #  ;
 }
 /*--Footer--*/
 .footer {
-  background: rgb(3, 0, 8);
+  background: rgb(52, 50, 54);
 }
 .footer-top {
   padding: 20px 0;

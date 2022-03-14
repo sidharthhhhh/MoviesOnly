@@ -1,3 +1,4 @@
+
 <?php include('header.php');
 if(!isset($_SESSION['user']))
 {
@@ -138,114 +139,202 @@ if(!isset($_SESSION['user']))
 	let monthArray = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 	let newMonth = monthArray[month];
 	let invoice_date = newDate + " " + newMonth + " " + year;
-	let template =  `<table style="width: 100%; margin: 0 auto;font-size: 15px;">
-                                    <tr>
-                                        <td>
-                                            <img src="./icons/header.png" alt="header" width="100%">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="d-flex align-items-center justify-content-between"
-                                            style=" border-bottom: 2px solid #140E38; margin-top: 30px;padding-bottom: 20px;">
-                                            <img src="./icons/finstreet-black.png" alt="logo" width="125">
-                                            <div class="d-flex flex-column align-items-end">
-                                                <span>GSTIN: 03AAAFQ8372P1ZS</span>
-                                                <a href="https://www.finstreet.in"
-                                                    style="display: block; color: black; text-decoration: none;">www.<span
-                                                        style="color: #140E38;">finstreet</span>.in</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="margin: 30px 0;" class="d-flex align-items-center justify-content-between">
-                                            <h1><b>INVOICE</b></h1>
-                                            <div class="d-flex align-items-end flex-column">
-                                                <span>Invoice Date: &nbsp;<span class="invoice-date">${invoice_date}</span></span>
-                                                <b>Invoice No: <span class="invoice-no">${timestamp}</span></b>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="d-flex justify-content-between mb-4">
-                                            <div>
-                                                <b style="line-height: 30px;">Bill to</b>
-                                                <div style="line-height: 21px;max-width: 280px;min-height: 135px;">
-                                                    <span class="customer_name">${"user_name"}</span>,<br>
-                                                    <span class="customer_address">${"user_address"}</span><br>
-                                                    <span class="customer_mobile">${"user_mobile"}</span><br>
-                                                </div>
-                                            </div>
-                                            <div class="text-right">
-                                                <b style="line-height: 30px;">Ship to</b>
-                                                <div style="line-height: 21px;max-width: 280px;min-height: 135px;">
-                                                    <span class="customer_name">${"user_name"}</span>,<br>
-                                                    <span class="customer_address">${"user_address"}</span><br>
-                                                    <span class="customer_mobile">${"user_mobile"}</span><br>
-                                                </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <b>GSTIN :</b>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <table border="0" style="color: white; width: 100%; text-align: center;margin-top: 24px;">
-                                                <thead style="background-color: #194089;">
-                                                    <td style="width: 10%; padding: 6px 0; border: 1px solid black; border-bottom: 1px;">
-                                                        S.No
-                                                    </td>
-                                                    <td
-                                                        style="width: 40%; padding: 6px 0; border: 1px solid black; border-bottom: 1px; border-left: 1px;">
-                                                        ITEM
-                                                        DESCRIPTION</td>
-                                                    <td
-                                                        style="width: 15%; padding: 6px 0; border: 1px solid black; border-bottom: 1px; border-left: 1px;">
-                                                        MRP
-                                                    </td>
-                                                    <td
-                                                        style="width: 15%; padding: 6px 0; border: 1px solid black; border-bottom: 1px; border-left: 1px;">
-                                                        QUANTITY</td>
-                                                    <td
-                                                        style="width: 20%; padding: 6px 0; border: 1px solid black; border-bottom: 1px; border-left: 1px;">
-                                                        AMOUNT
-                                                    </td>
-                                                </thead>
-                                                <tbody>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td
-                                            style="color: black;font-size: 14px; border-top: 2px solid #140E38; padding-top: 24px; display: grid;margin: 120px 0 20px 0; grid-template-columns: repeat(3,1fr);justify-items: center;">
-                                            <div class="d-flex align-items-center">
-                                                <img style="margin-right: 10px;" src="./icons/mobile.png" alt="mobile">
-                                                <span>+91 7717303384</span>
-                                            </div>
-                                            <div class="d-flex align-items-center" style="min-width: 300px;">
-                                                <img style="margin-right: 10px;" src="./icons/address.png" alt="address">
-                                                <address>
-                                                    Next57 Coworking,
-                                                    Plot No. 57, Industrial Area Phase I,
-                                                    Chandigarh, 160002
-                                                </address>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <img style="margin-right: 10px;" src="./icons/email.png" alt="email">
-                                                <a style="display: block; color: black; text-decoration: none;"
-                                                    href="mailto:events@finstreet.in">events@finstreet.in</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="./icons/footer.png" alt="footer" width="100%">
-                                        </td>
-                                    </tr>
-                                </table>`;
+	let template =  `
+	
+<!-- Header -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+  <tr>
+    <td height="20"></td>
+  </tr>
+  <tr>
+    <td>
+      <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff" style="border-radius: 10px 10px 0 0;">
+        <tr class="hiddenMobile">
+          <td height="40"></td>
+        </tr>
+        <tr class="visibleMobile">
+          <td height="30"></td>
+        </tr>
+
+        <tr>
+          <td>
+            <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+              <tbody>
+                <tr>
+                  <td>
+                    <table width="220" border="0" cellpadding="0" cellspacing="0" align="left" class="col">
+                      <tbody>
+                        <tr>
+                          <td align="left"> <img src="http://www.supah.it/dribbble/017/logo.png" width="32" height="32" alt="logo" border="0" /></td>
+                        </tr>
+                        <tr class="hiddenMobile">
+                          <td height="40"></td>
+                        </tr>
+                        <tr class="visibleMobile">
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: left;">
+                            <?php 
+                            echo $_SESSION['place'];
+                            echo $_SESSION['name'];
+                            ?>
+                            <br> Thank you for booking the ticket.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table width="220" border="0" cellpadding="0" cellspacing="0" align="right" class="col">
+                      <tbody>
+                        <tr class="visibleMobile">
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td height="5"></td>
+                        </tr>
+                        <tr>
+                          <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right;">
+                            Invoice
+                          </td>
+                        </tr>
+                        <tr>
+                        <tr class="hiddenMobile">
+                          <td height="50"></td>
+                        </tr>
+                        <tr class="visibleMobile">
+                          <td height="20"></td>
+                        </tr>
+                        <tr>
+                          <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
+                            <small>ORDER</small> #800000025<br />
+                            <small>MARCH 4TH 2016</small>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Header -->
+<!-- Order Details -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+  <tbody>
+    <tr>
+      <td>
+        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
+          <tbody>
+            <tr>
+            <tr class="hiddenMobile">
+              <td height="60"></td>
+            </tr>
+            <tr class="visibleMobile">
+              <td height="40"></td>
+            </tr>
+            <tr>
+              <td>
+                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                  <tbody>
+                    <tr>
+                      <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 10px 7px 0;" width="52%" align="left">
+                        Item
+                      </th>
+                      <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="left">
+                        <small>SKU</small>
+                      </th>
+                      <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="center">
+                        Quantity
+                      </th>
+                      <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
+                        Subtotal
+                      </th>
+                    </tr>
+                    <tr>
+                      <td height="1" style="background: #bebebe;" colspan="4"></td>
+                    </tr>
+                    <tr>
+                      <td height="10" colspan="4"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">
+                        <?php echo $_SESSION["movie_name"]; ?>
+                      </td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MH792AM/A</small></td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><?php echo $_SESSION["seats"] ?></td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><?php echo $_SESSION["amount"] ?></td>
+                    </tr>
+                    <tr>
+                      <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                    </tr>
+                    <tr>
+                      <td height="1" colspan="4" style="border-bottom:1px solid #e4e4e4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td height="20"></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- /Order Details -->
+<!-- Total -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#e1e1e1">
+  <tbody>
+    <tr>
+      <td>
+        <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="fullTable" bgcolor="#ffffff">
+          <tbody>
+            <tr>
+              <td>
+
+                <!-- Table Total -->
+                <table width="480" border="0" cellpadding="0" cellspacing="0" align="center" class="fullPadding">
+                  <tbody>
+                    <tr>
+                      
+                    </tr>
+                    <tr>
+                     
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; ">
+                        <strong>Grand Total (Incl.Tax)</strong>
+                      </td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #000; line-height: 22px; vertical-align: top; text-align:right; ">
+                        <strong><?php echo $_SESSION["amount"]; ?></strong>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #b0b0b0; line-height: 22px; vertical-align: top; text-align:right; "><small></small></td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #b0b0b0; line-height: 22px; vertical-align: top; text-align:right; ">
+                        <small></small>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- /Table Total -->
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- /Total -->`;
 
 
 

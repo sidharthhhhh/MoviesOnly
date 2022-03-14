@@ -1,4 +1,5 @@
 <?php include('header.php');
+session_start();
 if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
@@ -11,7 +12,9 @@ if(!isset($_SESSION['user']))
 		<div class="content-top">
 				<div class="section group">
 					<div class="about span_1_of_2">	
-						<h3><?php echo $movie['movie_name']; ?></h3>	
+						<h3><?php
+						$_SESSION['movie_name'] = $movie['movie_name'];
+						echo $movie['movie_name']; ?></h3>	
 							<div class="about-top">	
 								<div class="grid images_3_of_2">
 									<img src="<?php echo $movie['image']; ?>" alt=""/>
@@ -37,7 +40,11 @@ if(!isset($_SESSION['user']))
 											Theatre
 										</td>
 										<td>
-											<?php echo $theatre['name'].", ".$theatre['place'];?>
+											<?php 
+											$_SESSION['name'] = $theatre['name'];
+											$_SESSION['place'] = $theatre['place'];
+											echo $theatre['name'].", ".$theatre['place'];
+											?>
 										</td>
 										</tr>
 										<tr>
@@ -145,6 +152,6 @@ if(!isset($_SESSION['user']))
 		amount=charge*$(this).val();
 		$('#amount').html("Rs "+amount);
 		$('#hm').val(amount);
-		window.print(seats)
+		
 	});
 </script>
