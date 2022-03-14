@@ -169,7 +169,7 @@ a {
 } /* vertical align top */
 .underline {
   padding-bottom: 5px;
-  border-bottom: 1px solid rgb(221, 206, 206);
+  border-bottom: 1px solid #eee;
   margin: 0 0 20px 0;
 } /* Add 5px bottom padding and a underline */
 nav.vertical ul li {
@@ -188,13 +188,13 @@ img {
 }
 body {
   font-family: "AmbleRegular";
-  background: rgb(189, 32, 32);
+  background: #fff;
 }
 .header {
-  background: url("../images/header.jpg");
+  background: url(../images/header1.jpg);
 }
 .header-top {
-  border-bottom: 2px ridge rgb(228, 226, 231);
+  border-bottom: 2px ridge #333;
 }
 .wrap {
   width: 80%;
@@ -245,7 +245,7 @@ a:hover {
   margin-right: 20px;
 }
 #example-one a {
-  color: rgb(170, 35, 35);  
+  color: #aaa;
   font-size: 16px;
   float: left;
   padding: 6px 10px 4px 10px;
@@ -255,14 +255,8 @@ a:hover {
 #example-one a:hover {
   color: #db9603;
 }
-#magic-line {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 8x;
-  height: 2px;
-  background: #e2630e;
-}
+
+
 .ie6 #example-one li,
 .ie7 #example-one li {
   display: inline;
@@ -294,8 +288,8 @@ a:hover {
   display: block;
   height: 20px;
   font-size: 13px;
-  color: #0fb82b;
-  margin-bottom: 10px;
+  color: #fac9a9;
+  margin-bottom: 44px;
 }
 #reservation-form select {
   border: 1px solid #5d3825;
@@ -317,11 +311,11 @@ a:hover {
   display: block;
   padding-bottom: 4px;
   font-size: 13px;
-  color: rgb(76, 63, 194);
+  color: #aaa;
 }
 /*--Content--*/
 .content {
-  background: rgb(238, 236, 236);
+  background: #fff;
   padding: 20px 0;
 }
 /*  GRID OF THREE   ============================================================================= */
@@ -339,25 +333,25 @@ a:hover {
   overflow: hidden;
 }
 .data {
-  color: #dd5b10;
+  color: #989898;
   margin-bottom: 1px;
 }
 .color {
-  color: #00050f;
+  color: #1344b0;
   text-decoration: underline;
   line-height: 1.8em;
   font-size: 13px;
 }
 a:hover {
   text-decoration: none;
-  color: #8d98ad;
+  color: #1344b0;
 }
 .text-top {
   padding-top: 6px;
   display: inline-block;
   font-size: 13px;
   line-height: 1.8em;
-  color: #797581;
+  color: #888;
 }
 .listimg {
   display: block;
@@ -380,14 +374,14 @@ a:hover {
 .link {
   font-size: 12px;
   line-height: 20px;
-  color: #dd5b10;
+  color: #313131;
   font-weight: bold;
   text-decoration: underline;
   line-height: 1.8em;
 }
 .link:hover {
   text-decoration: none;
-  color: #db0707;
+  color: #313131;
 }
 .link2 {
   font-size: 14px;
@@ -441,7 +435,7 @@ a:hover {
 }
 .list_1_of_2 p {
   font-size: 0.8125em;
-  color: rgb(107, 108, 124);
+  color: #333;
   line-height: 1.5em;
   font-family: verdana, arial, helvetica, helve, sans-serif;
   padding: 0;
@@ -512,7 +506,7 @@ p.s-img a:hover {
   color: #e3480b;
 }
 .color1 {
-  color: #5b5769;
+  color: #989898;
   font-size: 13px;
 }
 .link-top {
@@ -523,11 +517,11 @@ p.s-img a:hover {
   text-decoration: underline;
   font-size: 13px;
   line-height: 1.8em;
-  color: #  ;
+  color: #1344b0;
 }
 /*--Footer--*/
 .footer {
-  background: rgb(52, 50, 54);
+  background: #222;
 }
 .footer-top {
   padding: 20px 0;
@@ -549,16 +543,16 @@ p.s-img a:hover {
 }
 .span_1_of_4 p {
   font-size: 0.8125em;
-  color: rgb(187, 137, 137);
+  color: #666;
   line-height: 1.8em;
 }
 p.txt_4 {
-  color: rgb(12, 29, 182);
+  color: #666;
   margin-top: 2%;
   font-size: 2em;
 }
 .content-top h3 {
-  color: #faf9f8;
+  color: #fcac03;
   font-size: 2em;
   padding: 1.5%;
 }
@@ -601,7 +595,7 @@ p.txt_4 {
 }
 .footer-nav li a {
   font-size: 13px;
-  color: rgb(19, 32, 153);
+  color: #666;
   vertical-align: top;
   line-height: 21px;
 }
@@ -674,7 +668,7 @@ p.txt_4 {
 .span_3_of_2 p {
   font-size: 0.8125em;
   padding: 0.3em 0;
-  color: rgb(0, 4, 223);
+  color: #888;
   line-height: 1.8em;
 }
 .span_3_of_1 p {
@@ -773,7 +767,7 @@ p.txt_4 {
   padding: 12px 14px 9px 10px;
 }
 .span_3_of_2 h4 {
-  color: rgb(91, 19, 224);
+  color: #888;
   font-size: 1.5em;
   margin-bottom: 2%;
 }
@@ -795,7 +789,7 @@ p.txt_4 {
   margin-left: 3.3%;
 }
 a {
-  color: rgb(86, 21, 206);
+  color: #888;
   font-size: 13px;
   line-height: 1.5em;
 }
@@ -932,7 +926,7 @@ h4.h-text a:hover {
   background: #db9603 url(../images/large-button-overlay.png);
   border: 1px solid rgba(0, 0, 0, 0.25);
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -webkit-border-radius: 5px;
   border-radius: 2px;
   position: absolute;

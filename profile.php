@@ -13,7 +13,7 @@ if(!isset($_SESSION['user']))
 				<div class="section group">
 					<div class="about span_1_of_2">	
 						<h3 style="color:black;" class="text-center">BOOKING HISTORY</h3>
-						<button class="download-invoice">download</button>
+					
 						<?php include('msgbox.php');?>
 						<?php
 				$bk=mysqli_query($con,"select * from tbl_bookings where user_id='".$_SESSION['user']."'");
@@ -79,10 +79,14 @@ if(!isset($_SESSION['user']))
 									<?php
 									}
 									?>
+                  <td>
+                  <button class="btn btn-danger download-invoice">Download</button>
+                </td> 
 								</td>
 							</tr>
 							<?php
 						}
+            echo `	<button class="download-invoice">download</button>`
 						?></tbody>
 					</table>
 
@@ -165,7 +169,7 @@ if(!isset($_SESSION['user']))
                     <table width="220" border="0" cellpadding="0" cellspacing="0" align="left" class="col">
                       <tbody>
                         <tr>
-                          <td align="left"> <img src="http://www.supah.it/dribbble/017/logo.png" width="32" height="32" alt="logo" border="0" /></td>
+                          <td align="left"> <img src="images/logo1.png" width="80" height="80" alt="logo" border="0" /></td>
                         </tr>
                         <tr class="hiddenMobile">
                           <td height="40"></td>
@@ -194,7 +198,7 @@ if(!isset($_SESSION['user']))
                         </tr>
                         <tr>
                           <td style="font-size: 21px; color: #ff0000; letter-spacing: -1px; font-family: 'Open Sans', sans-serif; line-height: 1; vertical-align: top; text-align: right;">
-                            Invoice
+                            Ticket
                           </td>
                         </tr>
                         <tr>
@@ -205,10 +209,7 @@ if(!isset($_SESSION['user']))
                           <td height="20"></td>
                         </tr>
                         <tr>
-                          <td style="font-size: 12px; color: #5b5b5b; font-family: 'Open Sans', sans-serif; line-height: 18px; vertical-align: top; text-align: right;">
-                            <small>ORDER</small> #800000025<br />
-                            <small>MARCH 4TH 2016</small>
-                          </td>
+                    
                         </tr>
                       </tbody>
                     </table>
@@ -246,10 +247,10 @@ if(!isset($_SESSION['user']))
                         Item
                       </th>
                       <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="left">
-                        <small>SKU</small>
+                        
                       </th>
                       <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #5b5b5b; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="center">
-                        Quantity
+                        No of Seats
                       </th>
                       <th style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33; font-weight: normal; line-height: 1; vertical-align: top; padding: 0 0 7px;" align="right">
                         Subtotal
@@ -265,7 +266,7 @@ if(!isset($_SESSION['user']))
                       <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #ff0000;  line-height: 18px;  vertical-align: top; padding:10px 0;" class="article">
                         <?php echo $_SESSION["movie_name"]; ?>
                       </td>
-                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;"><small>MH792AM/A</small></td>
+                      <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;</td>
                       <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #646a6e;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="center"><?php echo $_SESSION["seats"] ?></td>
                       <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #1e2b33;  line-height: 18px;  vertical-align: top; padding:10px 0;" align="right"><?php echo $_SESSION["amount"] ?></td>
                     </tr>
@@ -319,7 +320,7 @@ if(!isset($_SESSION['user']))
                     <tr>
                       <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #b0b0b0; line-height: 22px; vertical-align: top; text-align:right; "><small></small></td>
                       <td style="font-size: 12px; font-family: 'Open Sans', sans-serif; color: #b0b0b0; line-height: 22px; vertical-align: top; text-align:right; ">
-                        <small></small>
+                        
                       </td>
                     </tr>
                   </tbody>
