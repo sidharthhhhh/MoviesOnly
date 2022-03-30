@@ -3,7 +3,7 @@
             <div class="panel-body" id="disp"><?php
     extract($_POST);
     include('../../config.php');
-    $w=mysqli_query($con,"select * from tbl_shows where st_id='$id' and r_status='1'");
+    $w=mysqli_query($con,"select * from tbl_shows where st_id='19' and r_status='1'");
     $swt=mysqli_fetch_array($w);
     $qq=mysqli_query($con,"select * from tbl_bookings where show_id='".$swt['s_id']."' and date=CURDATE()");
     if(mysqli_num_rows($qq))

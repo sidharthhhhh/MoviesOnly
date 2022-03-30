@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 09, 2022 at 04:13 PM
+-- Generation Time: Mar 15, 2022 at 08:21 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.4.27
 
@@ -48,7 +48,9 @@ CREATE TABLE `tbl_bookings` (
 INSERT INTO `tbl_bookings` (`book_id`, `ticket_id`, `t_id`, `user_id`, `show_id`, `screen_id`, `no_seats`, `amount`, `ticket_date`, `date`, `status`) VALUES
 (12, 'BKID6369842', 4, 4, 17, 3, 1, 380, '2021-04-15', '2021-04-15', 1),
 (13, 'BKID2313964', 6, 5, 21, 6, 4, 2400, '2021-04-16', '2021-04-15', 1),
-(14, 'BKID1766021', 6, 5, 22, 6, 2, 1200, '2021-04-16', '2021-04-16', 1);
+(14, 'BKID1766021', 6, 5, 22, 6, 2, 1200, '2021-04-16', '2021-04-16', 1),
+(17, 'BKID4831368', 6, 0, 22, 6, 1, 600, '2022-03-15', '2022-03-15', 1),
+(18, 'BKID7815535', 6, 8, 21, 6, 1, 600, '2022-03-15', '2022-03-15', 1);
 
 -- --------------------------------------------------------
 
@@ -83,9 +85,10 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) VALUES
-(0, 0, 'admin', 'password', 2),
+(0, 0, 'sidharth', 'password', 2),
 (1, 1, 'THR760801', 'PWD649976', 2),
-(22, 7, 'sidharthsangeveni@gmail.com', 'ssssssss', 2);
+(22, 7, 'sidharthsangeveni@gmail.com', 'ssssssss', 2),
+(23, 8, 's@gmail.com', '12121212', 2);
 
 -- --------------------------------------------------------
 
@@ -136,11 +139,10 @@ CREATE TABLE `tbl_news` (
 --
 
 INSERT INTO `tbl_news` (`news_id`, `name`, `cast`, `news_date`, `description`, `attachment`) VALUES
-(3, 'Black Widow', 'Scarlett Johansson, Florence Pugh, David Harbour, Rachel Weisz', '2021-07-09', 'At birth the Black Widow (aka Natasha Romanova) is given to the KGB, which grooms her to become its ultimate operative.', 'news_images/blackwidow.jpg'),
-(9, 'Shang-Chi and the Legend of the Ten Rings', 'Simu Liu, Awkwafina, Tony Leung, Fala Chen, Micheele Yeoh', '2021-09-14', 'Shang-Chi is a master of numerous unarmed and weaponry-based wushu styles, including the use of the gun, nunchaku, and jian.', 'news_images/shangchi.jpg'),
-(10, 'The Eternals', 'Richard Madden, Salma Hayek, Angelina Jolie, Kit Harrington', '2021-11-04', 'The saga of the eternals, a race of immortal beings who lived on earth and shaped its history and civilizations.', 'news_images/eternals.jpg'),
+(3, 'Radhe Shyam', '	\nPrabhas\nPooja Hegde', '2021-07-09', 'Radhe Shyam is a 2022 Indian period romantic drama film written and directed by Radha Krishna Kumar', 'news_images/radhe.jpg'),
+(9, 'Bhool Bhulaiya', 'Karthik Aryan', '2022-09-22', 'Bhool Bhulaiya is horror cum Comic Movie', 'news_images/bbl2.jpg'),
 (11, 'Radhe Shyam', 'Prabhas, Pooja Hegde', '2022-03-11', 'Radhe Shyam is an upcoming Indian period romantic drama film written and directed by Radha Krishna Kumar, starring Prabhas and Pooja Hegde. It is shot simultaneously in Telugu and Hindi languages.[3][', 'news_images/Radhe.jpg'),
-(12, 'dsgzgh', 'dfhdhdh', '2022-03-31', 'dfhdfhd', 'news_images/3i.jpg');
+(12, 'The Kashmir Files', 'Mithun Chakraborty,Anupam Kher, Darshan Kumar', '2022-03-31', 'Kasmhir Files depicts the actual life of pandits living in Kashmir aka Kashmiri Pandits', 'news_images/3i.jpg');
 
 -- --------------------------------------------------------
 
@@ -165,7 +167,8 @@ INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gen
 (0, 'admin', 'harryden@gmail.com', '1247778540', 22, 'gender'),
 (4, 'Bruno', 'bruno@gmail.com', '7451112450', 30, 'gender'),
 (5, 'James', 'james@gmail.com', '7124445696', 25, 'gender'),
-(6, 'Sidharth', 'sidharthsangeveni@gmail.com', '7878467689', 20, 'gender');
+(6, 'Sidharth', 'sidharthsangeveni@gmail.com', '7878467689', 20, 'gender'),
+(8, 'sidharth', 's@gmail.com', '9000000000', 20, 'gender');
 
 -- --------------------------------------------------------
 
@@ -278,10 +281,10 @@ CREATE TABLE `tbl_theatre` (
 --
 
 INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `state`, `pin`) VALUES
-(1, 'AMC Theatre', '11500 Ash St', 'Leawd', 'DM', 691523),
-(4, 'Cinemark', '3900 Dallas Parkway Suite 500 Plano', '12 Street, Ep', 'UD', 691523),
-(5, 'Midtown Cinemas', 'Aue', 'Charles Street, EUS', 'DMM', 691523),
-(6, 'Riverview Theater', '3800 42nd Ave S', 'Minneapolis, MN 55406', 'Minnesot', 224450);
+(1, 'AMC Theatre', 'Demo Address 1', 'Mumbai', 'DM', 400000),
+(4, 'Cinemark', 'Demo Address', 'Mumbai', 'UD', 400013),
+(5, 'Midtown Cinemas', 'Demo Address 2', 'Mumbai', 'DMM', 400021),
+(6, 'Riverview Theater', 'Demo Address 3', 'Mumbai', 'Minnesot', 40023);
 
 --
 -- Indexes for dumped tables
@@ -355,7 +358,7 @@ ALTER TABLE `tbl_theatre`
 -- AUTO_INCREMENT for table `tbl_bookings`
 --
 ALTER TABLE `tbl_bookings`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `tbl_contact`
@@ -367,7 +370,7 @@ ALTER TABLE `tbl_contact`
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `tbl_movie`
@@ -385,7 +388,7 @@ ALTER TABLE `tbl_news`
 -- AUTO_INCREMENT for table `tbl_registration`
 --
 ALTER TABLE `tbl_registration`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `tbl_screens`

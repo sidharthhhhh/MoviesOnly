@@ -13,5 +13,5 @@ Password: password
 
 **Theatre Login Details**
 
-Username: THR760801
-Password: PWD649976
+Username: Theatre
+Password: 123456

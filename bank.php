@@ -20,7 +20,7 @@ extract($_POST);
 <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 <meta http-equiv="pragma" content="no-cache" />
 
-<title>OMTBS</title>
+<title>MovieOnly</title>
 <link href="css/bank.css" rel="stylesheet" type="text/css"/>
 
 
@@ -31,7 +31,7 @@ extract($_POST);
 
 <div id="mainContainer" class="row large-centered">
 
-  <div class="text-center"><h2>BANK</h2></div>
+  <div class="text-center"><h2>DEMO BANK</h2></div>
   
   <hr class="divider">
   <dl class="mercDetails">

@@ -544,11 +544,11 @@ p.s-img a:hover {
 }
 .span_1_of_4 p {
   font-size: 0.8125em;
-  color: #666;
+  color: #faf9f9;
   line-height: 1.8em;
 }
 p.txt_4 {
-  color: #666;
+  color: #faf9f9;
   margin-top: 2%;
   font-size: 2em;
 }
@@ -596,12 +596,12 @@ p.txt_4 {
 }
 .footer-nav li a {
   font-size: 13px;
-  color: #666;
+  color: #faf9f9;
   vertical-align: top;
   line-height: 21px;
 }
 .footer-nav li a:hover {
-  color: #888;
+  color: #faf9f9;
 }
 .footer-bottom {
   background: #111;
